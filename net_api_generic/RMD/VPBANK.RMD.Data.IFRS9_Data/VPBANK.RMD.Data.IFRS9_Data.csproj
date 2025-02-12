@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="StoreProcedure\**" />
+    <EmbeddedResource Remove="StoreProcedure\**" />
+    <None Remove="StoreProcedure\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VPBANK.RMD.EFCore\VPBANK.RMD.EFCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\POCOs\" />
+    <Folder Include="Functions\" />
+    <Folder Include="Params\" />
+    <Folder Include="StoreProcedures\Tech\" />
+    <Folder Include="Views\WebCore\" />
+  </ItemGroup>
+
+</Project>

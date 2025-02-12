@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="3.1.11" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.11" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VPBANK.RMD.API.Settings\VPBANK.RMD.API.Settings.csproj" />
+    <ProjectReference Include="..\VPBANK.RMD.Utils.AuditLog\VPBANK.RMD.Utils.AuditLog.csproj" />
+  </ItemGroup>
+
+</Project>

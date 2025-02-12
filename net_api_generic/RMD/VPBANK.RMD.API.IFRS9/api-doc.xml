@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VPBANK.RMD.API.IFRS9</name>
+    </assembly>
+    <members>
+        <member name="M:VPBANK.RMD.API.IFRS9.Controllers.Common.AuditLogController.Create(VPBANK.RMD.Utils.AuditLog.Models.AuditLog)">
+            <summary>
+            Add new audit logs
+            </summary>
+            <param name="elasticLog"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.IFRS9.Controllers.Common.AuditLogController.Query(VPBANK.RMD.Utils.AuditLog.Models.ElasticSearchPaging)">
+            <summary>
+            Query audit logs
+            </summary>
+            <param name="elasticSearchPaging"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.IFRS9.Controllers.Common.FileController.Download(System.String)">
+            <summary>
+            
+            FileStreamResult – Sends binary content to the response by using a Stream instance. Here you have a stream and want to return stream content as a file.
+            FileContentResult – Sends the contents of a binary file to the response.Here you have a byte array and want to return byte content as a file.
+            
+            MIME Types for files upload and download
+            Below are a few examples of MIME – content types for your information.
+            
+            ALL files: mimeType = "application/octet-stream";
+            
+            Text File – "text/plain"
+            PNG image – "image/png"
+            JPEG image – "image/jpeg"
+            MSDoc – "application/vnd.ms-word"
+            MSDoc – "application/vnd.ms-word"
+            PDF file – "application/pdf"
+            Excel File- "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            </summary>
+            <param name="fileName"></param>
+            <returns>FileStreamResult</returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.IFRS9.Controllers.Common.FileController.Upload(System.Byte[],System.String)">
+            <summary>
+            Save document in wwwroot folder.
+            </summary>
+            <param name="file"></param>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.IFRS9.Controllers.Common.NotificationController.Query(VPBANK.RMD.Utils.Common.Helpers.Paging.PaginatedInputModel)">
+            <summary>
+            Query find notification from elasticsearch, search by session user logined, no filters, has paginated
+            </summary>
+            <param name="paginatedParams"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

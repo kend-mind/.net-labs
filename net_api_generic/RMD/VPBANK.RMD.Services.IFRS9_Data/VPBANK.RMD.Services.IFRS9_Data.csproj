@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VPBANK.RMD.Data.IFRS9_Data\VPBANK.RMD.Data.IFRS9_Data.csproj" />
+    <ProjectReference Include="..\VPBANK.RMD.Repositories.IFRS9_Data\VPBANK.RMD.Repositories.IFRS9_Data.csproj" />
+  </ItemGroup>
+
+</Project>

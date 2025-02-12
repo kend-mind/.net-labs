@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VPBANK.RMD.API.Auth</name>
+    </assembly>
+    <members>
+        <member name="M:VPBANK.RMD.API.Auth.Controllers.AuthController.Token(VPBANK.RMD.Services.Auth.DataContracts.UserAuthDto)">
+            <summary>
+            Build token when login
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Auth.Controllers.AuthController.RefreshToken">
+            <summary>
+            Refresh token if expiry
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Auth.Controllers.AuthController.RevokeToken(VPBANK.RMD.Services.Auth.DataContracts.RevokeTokenDto)">
+            <summary>
+            Revoke token when refresh
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.RoleController.GuiDataRoles">
+            <summary>
+            Get all data roles
+            </summary>
+            <returns>List selected items (SelectedItem)</returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.RoleController.Save(VPBANK.RMD.Services.Auth.DataContracts.UserRoleMappingDto)">
+            <summary>
+            Save user with data role, func role, component role
+            </summary>
+            <param name="entity"></param>
+            <returns>object UserRoleMappingDto</returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.RoleController.Reset(VPBANK.RMD.Services.Auth.DataContracts.UserAuthDto)">
+            <summary>
+            Delete all roles by username
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.RoleController.DeleteFuncRole(System.String)">
+            <summary>
+            Delete func role by username
+            </summary>
+            <param name="funcRole"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.RoleController.DeleteCompRole(System.String)">
+            <summary>
+            Delete component role (set IsDeleted = true)
+            </summary>
+            <param name="compRole"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.UserController.FindByUsername(System.String)">
+            <summary>
+            Find User by username
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.UserController.FindBySupperAdmin">
+            <summary>
+            Find all username is supper administrator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.UserController.FindEmailsByUsernames(System.Collections.Generic.List{System.String})">
+            <summary>
+            Find all emails by all username
+            </summary>
+            <param name="usernames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.UserController.DeleteUser(System.Int32)">
+            <summary>
+            Delete user by pk_id
+            </summary>
+            <param name="pk_Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.UserController.FindUsernames">
+            <summary>
+            Find all usernames for selected_item
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VPBANK.RMD.API.Controllers.UserController.FindByUserNonRole">
+            <summary>
+            Get all usernames not be grant roles (selected_item)
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
