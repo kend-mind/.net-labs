@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Impls\" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(MySQL)' == 'True' ">  
+    <PackageReference Include="MySqlConnector" Version="0.47.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(PgSQL)' == 'True' ">  
+    <PackageReference Include="Npgsql" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(SQLite)' == 'True' ">  
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+  </ItemGroup>
+</Project>

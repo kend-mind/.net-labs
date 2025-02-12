@@ -1,0 +1,8 @@
+博客地址：http://www.cnblogs.com/catcher1994/p/5145173.html
+
+这是一个Nancy的简单demo，它是基于Nancy.Hosting.Aspnet的
+
+运行须知：
+1、执行script.sql这个脚本，生成相应的数据库
+2、修改MovieModule.cs和MovieTypeModule.cs这两个文件里面的连接字符串的用户名和密码
+
